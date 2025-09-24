@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Email Result</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gradient-to-r from-green-400 via-blue-500 to-purple-600 min-h-screen flex items-center justify-center">
+
+  <div class="bg-white shadow-2xl rounded-2xl p-10 w-full max-w-3xl">
+    <h1 class="text-3xl font-extrabold text-center text-green-600 mb-6">📩 Your Generated Email</h1>
+
+    <!-- Rendered Markdown Response -->
+    <div class="prose max-w-none text-gray-800">
+      {{ email|safe }}
+    </div>
+
+    <!-- Buttons -->
+    <div class="mt-8 flex justify-center gap-4">
+      <a href="/" class="bg-gradient-to-r from-indigo-500 to-purple-500 text-white px-6 py-3 rounded-xl font-medium hover:opacity-90 transition">
+        ⬅ Generate Another
+      </a>
+      <button onclick="navigator.clipboard.writeText(document.querySelector('.prose').innerText)" 
+        class="bg-gradient-to-r from-green-500 to-teal-500 text-white px-6 py-3 rounded-xl font-medium hover:opacity-90 transition">
+        📋 Copy Email
+      </button>
+    </div>
+  </div>
+
+</body>
+</html>

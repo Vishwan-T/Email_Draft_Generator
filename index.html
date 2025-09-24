@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Email Draft Generator</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 min-h-screen flex items-center justify-center">
+
+  <div class="bg-white shadow-2xl rounded-2xl p-10 w-full max-w-2xl transform hover:scale-[1.01] transition duration-300">
+    <h1 class="text-3xl font-extrabold text-center text-indigo-600 mb-6">📧 Email Draft Generator</h1>
+    <p class="text-gray-600 text-center mb-8">Quickly create professional, friendly, or casual email drafts powered by AI.</p>
+
+    <form action="/generate" method="POST" class="space-y-6">
+      <!-- Prompt Input -->
+      <div>
+        <label class="block text-sm font-semibold text-gray-700 mb-2">Your Request:</label>
+        <textarea name="prompt" rows="5" required
+          class="w-full border border-gray-300 rounded-lg p-4 focus:ring-2 focus:ring-indigo-400 focus:outline-none"
+          placeholder="e.g., Write a leave application for my son John from Jan 10–12 due to medical reasons."></textarea>
+      </div>
+
+      <!-- Tone Dropdown -->
+      <div>
+        <label class="block text-sm font-semibold text-gray-700 mb-2">Choose Tone:</label>
+        <select name="tone"
+          class="w-full border border-gray-300 rounded-lg p-4 focus:ring-2 focus:ring-indigo-400 focus:outline-none">
+          <option value="professional">Professional</option>
+          <option value="casual">Casual</option>
+          <option value="friendly">Friendly</option>
+          <option value="apologetic">Apologetic</option>
+        </select>
+      </div>
+
+      <!-- Submit Button -->
+      <div class="text-center">
+        <button type="submit"
+          class="bg-gradient-to-r from-pink-500 to-indigo-500 text-white px-8 py-3 rounded-xl font-semibold hover:opacity-90 transition">
+          ✨ Generate Email
+        </button>
+      </div>
+    </form>
+  </div>
+
+</body>
+</html>

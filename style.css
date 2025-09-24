@@ -1,0 +1,25 @@
+.result-box {
+  background: #f9fafb;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  max-height: 500px;
+  overflow-y: auto;      /* scroll if too long */
+  white-space: pre-wrap; /* wrap text */
+  word-wrap: break-word;
+}
+
+.email-text {
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.email-text strong {
+  font-weight: bold;
+}
+
+.email-text ul {
+  margin: 10px 0;
+  padding-left: 20px;
+  list-style-type: disc;
+}
