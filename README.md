@@ -2,6 +2,9 @@
 
 A modern web application that generates professional email drafts using AI-powered language models through the Groq API. Built with Flask and styled with Tailwind CSS for a sleek, responsive user interface.
 
+![](https://github.com/Vishwan-T/Email_Draft_Generator/blob/main/Input.png)
+![](https://github.com/Vishwan-T/Email_Draft_Generator/blob/main/Output.png)
+
 ## ✨ Features
 
 - **AI-Powered Email Generation**: Leverages Groq's language models to create contextual email content
